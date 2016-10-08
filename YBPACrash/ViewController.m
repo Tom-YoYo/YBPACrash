@@ -16,7 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //数组越界
+    NSArray *arr = @[@1, @2];
+    NSLog(@"%@", arr[3]);
+    
+    //数组对象为空
+    NSString *str = nil;
+    arr = @[str];
+    
+    NSMutableArray *mArr = [NSMutableArray array];
+    [mArr addObject:str];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

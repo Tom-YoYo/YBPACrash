@@ -15,6 +15,7 @@
 		5A8D61E41DA8CBCE00D5270D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A8D61E21DA8CBCE00D5270D /* LaunchScreen.storyboard */; };
 		5A8D61EF1DA8CBCE00D5270D /* YBPACrashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D61EE1DA8CBCE00D5270D /* YBPACrashTests.m */; };
 		5A8D61FA1DA8CBCE00D5270D /* YBPACrashUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D61F91DA8CBCE00D5270D /* YBPACrashUITests.m */; };
+		5A8D62091DA8CBD800D5270D /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D62081DA8CBD800D5270D /* NSObject+runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5A8D61F51DA8CBCE00D5270D /* YBPACrashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBPACrashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8D61F91DA8CBCE00D5270D /* YBPACrashUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBPACrashUITests.m; sourceTree = "<group>"; };
 		5A8D61FB1DA8CBCE00D5270D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A8D62071DA8CBD800D5270D /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
+		5A8D62081DA8CBD800D5270D /* NSObject+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		5A8D61D31DA8CBCE00D5270D /* YBPACrash */ = {
 			isa = PBXGroup;
 			children = (
+				5A8D62071DA8CBD800D5270D /* NSObject+runtime.h */,
+				5A8D62081DA8CBD800D5270D /* NSObject+runtime.m */,
 				5A8D61D71DA8CBCE00D5270D /* AppDelegate.h */,
 				5A8D61D81DA8CBCE00D5270D /* AppDelegate.m */,
 				5A8D61DA1DA8CBCE00D5270D /* ViewController.h */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A8D62091DA8CBD800D5270D /* NSObject+runtime.m in Sources */,
 				5A8D61DC1DA8CBCE00D5270D /* ViewController.m in Sources */,
 				5A8D61D91DA8CBCE00D5270D /* AppDelegate.m in Sources */,
 				5A8D61D61DA8CBCE00D5270D /* main.m in Sources */,
@@ -414,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YBPACrash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ybing.www.YBPACrash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YBPACrash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ybing.www.YBPACrash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
